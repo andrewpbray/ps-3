@@ -1,0 +1,43 @@
+---
+layout: page
+title: Problem Set 3
+permalink: /problem-sets/
+published: FALSE
+output: 
+  html_document: 
+    highlight: pygments
+    theme: spacelab
+---
+
+### Crime and Communities: applying the lasso
+
+You now have access to all of the materials for Lab 3: both data sets (`crime-train.csv` and `crime-test.csv`), every groups' code to fit and calculate MSE for their models (`test-lab-3.R`), and the slides (with code) containing the comparison plots (`results.Rmd`).
+
+#### 1
+Contruct 4 new models starting with the full set of predictors, picking 4 different
+values for $\lambda$, and finding the resulting lasso regression estimates. You can 
+reference the [code](http://andrewpbray.github.io/math-243/assets/week-04/penalized-regression.Rmd) used in the example in class or the example in the book in section
+6.6. Note that you'll simply be choosing your lambdas, not selecting them via cross-
+validation. You'll also want to remove any columns with missing values before you
+create the model matrix.
+
+#### 2
+Compute the training MSE for each of the four models. You can use your function in
+`test-lab-3.Rmd` for this, though you may need to modify it depending on how
+you had the function bring in the coefficients from the model object to make
+the prediction.
+
+#### 3
+Compute test MSE for each of the four models.
+
+#### 4
+Compare the test MSE of these four models to your groups test MSE (in `results.Rmd`).
+Were you able to improve your predictions? Why do / why don't you think this happened?
+
+
+### Book exercises
+Exercise 14 in Ch. 3 and exercises 3 (all) and 9 (a-d) in Ch. 6.
+
+
+#### Challenge problem
+Exercise 7 in Ch. 6.
